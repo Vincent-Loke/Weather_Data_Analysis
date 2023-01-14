@@ -3,7 +3,7 @@
 #------------------------------------------------------------------------------#
 
 #Data import 
-filelocation="C:\\Users\\Asus Notebook\\Documents\\weather.csv"
+filelocation="weather.csv"
 weather = read.csv(filelocation,header = TRUE)
 
 #Install and load library
