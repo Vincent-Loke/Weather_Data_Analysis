@@ -1,6 +1,5 @@
 #------------------------------------------------------------------------------#
 #                             Name: Loke Weng Khay                             #
-#                             TP Number: TP062166                              #
 #------------------------------------------------------------------------------#
 
 #Data import 
@@ -266,10 +265,10 @@ boxplot(weather$MaxTemp,weather$MinTemp,
         col = c("orange","skyblue"),
         border = "black",
         horizontal = TRUE,
-        xlab="Temperature (캜)")
-title(sub = "Min Temperature Details (캜)", line = 4.5)
+        xlab="Temperature (째C)")
+title(sub = "Min Temperature Details (째C)", line = 4.5)
 title(sub = summaryStat1, line = 5.5)
-title(sub = "Max Temperature Details (캜)", line = 7.5)
+title(sub = "Max Temperature Details (째C)", line = 7.5)
 title(sub = summaryStat2, line = 8.5)
 
 
@@ -338,7 +337,7 @@ summaryStat3 = paste(names(sdata3),format(sdata3,digit=2),
                      collapse = "; ")
 boxplot(weather$Temp9am,
         main ="Temperature at 9AM",
-        xlab="Temperature (캜)",
+        xlab="Temperature (째C)",
         horizontal = TRUE,
         col = "skyblue")
 title(sub = summaryStat3, line = 5.5)
@@ -379,7 +378,7 @@ ggplot(weather,aes(x=RainToday,fill = RainToday)) +
 par(mar = c(7,4,4,2) + 0.1)
 sdata4 = (summary(weather$Temp3pm))
 summaryStat4 = paste(names(sdata4),format(sdata4,digit=2),collapse = "; ")
-boxplot(weather$Temp3pm,main ="Temperature at 3PM",xlab="Temperature (캜)",
+boxplot(weather$Temp3pm,main ="Temperature at 3PM",xlab="Temperature (째C)",
         horizontal = TRUE,col = "orange")
 title(sub = summaryStat4, line = 5.5)
 
@@ -455,10 +454,10 @@ boxplot(weather$Temp3pm,weather$Temp9am,
         col = c("orange","skyblue"),
         border = "black",
         horizontal = TRUE,
-        xlab="Temperature (캜)")
-title(sub = "9 AM Temperature Details (캜)", line = 4.5)
+        xlab="Temperature (째C)")
+title(sub = "9 AM Temperature Details (째C)", line = 4.5)
 title(sub = summaryStat5, line = 5.5)
-title(sub = "3 PM Temperature Details (캜)", line = 7.5)
+title(sub = "3 PM Temperature Details (째C)", line = 7.5)
 title(sub = summaryStat6, line = 8.5)
 
 
